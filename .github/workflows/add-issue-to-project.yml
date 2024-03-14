@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 1
     steps:
-      - uses: actions/add-to-project@v0.3.0
+      - uses: actions/add-to-project@v0.5.0
         with:
           project-url: https://github.com/users/kmkm001/projects/1
           # repo and projectのtokenが必要
