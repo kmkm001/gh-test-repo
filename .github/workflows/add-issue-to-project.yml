@@ -17,3 +17,6 @@ jobs:
           # 追加する条件のラベル
           # labeled: backlog, enhancement
           # label-operator: OR
+permissions:
+  # actions: read|write|none
+  issues: write
