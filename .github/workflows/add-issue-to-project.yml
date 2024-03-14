@@ -13,7 +13,7 @@ jobs:
         with:
           project-url: https://github.com/users/kmkm001/projects/1
           # repo and projectのtokenが必要
-          # github-token: ${{ secrets.ORGANIZATION_GITHUB_TOKEN }}
+          github-token: ${{ secrets.ACTIONS_TOKEN }}
           # 追加する条件のラベル
           # labeled: backlog, enhancement
           # label-operator: OR
