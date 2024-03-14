@@ -1,0 +1,18 @@
+name: Add To GitHub projects
+on:
+  issues:
+    types:
+      - opened # issueを登録した時
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.3.0
+        with:
+          project-url: https://github.com/users/kmkm001/projects/1
+          # repo and projectのtokenが必要
+          # github-token: ${{ secrets.ORGANIZATION_GITHUB_TOKEN }}
+          # 追加する条件のラベル
+          # labeled: backlog, enhancement
+          # label-operator: OR
